@@ -4,7 +4,7 @@ My agent pipeline was mostly a chain: eight stages, one small fan-out, and loops
 
 The idea and the four shapes (chain, diamond, branch, loop) are from Austin Marchese's video, [Stanford's Graph Method Explained: How to 10x Your Claude Productivity](https://www.youtube.com/watch?v=5nB8Rs4l0_M), which builds on a course by Andrew Ng. I ran his audit prompts on my own setup, fixed what they found, and wrote down what changed.
 
-- [the page](index.html)
+- [the page](https://divine7022.github.io/agent-experiments/graph-engineering/)
 - [PROMPT.md](PROMPT.md): what i asked, word for word
 - [PLAN.md](PLAN.md): the plan as approved
 - [GRAPH_AUDIT.md](GRAPH_AUDIT.md): the audit, edge by edge
