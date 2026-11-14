@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Graph engineering my agent setup</title>
+<style>
+:root { --bg:#fdfdfb; --ink:#1c1c1a; --mute:#5f5f5a; --rule:#dcdcd6; --accent:#2a7ad1; --warn:#c9571a; }
+@media (prefers-color-scheme: dark) { :root { --bg:#131312; --ink:#e9e9e4; --mute:#a3a39c; --rule:#33332f; } }
+body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+main { max-width:46rem; margin:0 auto; padding:3rem 16px 4rem; }
+h1 { font-size:2rem; line-height:1.2; margin:0 0 .5rem; }
+h2 { font-size:1.25rem; margin:3rem 0 .5rem; }
+p.lede { color:var(--mute); margin-top:0; }
+figure { margin:1.5rem 0; }
+figure svg { width:100%; height:auto; display:block; }
+figcaption { color:var(--mute); font-size:.9rem; margin-top:.4rem; }
+table { border-collapse:collapse; width:100%; font-size:.95rem; margin:1rem 0; }
+th,td { text-align:left; padding:.45rem .6rem; border-bottom:1px solid var(--rule); vertical-align:top; }
+th { color:var(--mute); font-weight:600; }
+td.n { font-variant-numeric:tabular-nums; white-space:nowrap; }
+.wrap { overflow-x:auto; }
+blockquote { margin:1rem 0; padding:.1rem 1rem; border-left:3px solid var(--accent); color:var(--mute); }
+a { color:var(--accent); }
+code { font-size:.9em; }
+footer { margin-top:4rem; padding-top:1rem; border-top:1px solid var(--rule); color:var(--mute); font-size:.85rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>Graph engineering my agent setup</h1>
+<p class="lede">My pipeline was mostly a chain: eight stages, one small fan-out, and loops that stopped "when clean". I audited it as a graph and changed its shape.</p>
+
+<p>The idea is from Austin Marchese's video, <a href="https://www.youtube.com/watch?v=5nB8Rs4l0_M">Stanford's Graph Method Explained</a>, which builds on a course by Andrew Ng. Every agent workflow is a graph of steps. Four shapes cover most of them, and each one fails in its own way. The figures here are redrawn for this page; the ideas in the first eight are his.</p>
+
+<h2>The four shapes</h2>
+<!-- fig:fig09_four_shapes -->
+<!-- fig:fig01_chain -->
+<!-- fig:fig02_diamond -->
+<!-- fig:fig03_branch -->
+<!-- fig:fig04_loop -->
+
+<h2>The wait test</h2>
+<p>One question, asked of every arrow in the graph:</p>
+<blockquote><p>Does this step actually need the result of the one before it?</p></blockquote>
+<p>If the answer is no, the two steps are not a chain. They can run together.</p>
+
+<h2>Where each shape breaks</h2>
+<!-- fig:fig05_isolated_context -->
+<!-- fig:fig06_fanout_failures -->
+<!-- fig:fig07_branch_limit -->
+<!-- fig:fig08_loop_cap -->
+
+<h2>My pipeline, before</h2>
+<!-- fig:pipeline_before -->
+<p>The audit found three things. The planner waited for research it did not need. Two reviewers read the same artifact one after the other. And the fix loop had no number on it.</p>
+
+<h2>My pipeline, after</h2>
+<!-- fig:pipeline_after -->
+<p>Every fan-out brief now carries a line saying what the other workers cover, and every merge says who reported, so an overlap or a missing worker is visible.</p>
+
+<h2>What changed, in counts</h2>
+<div class="wrap">
+<table>
+<tr><th></th><th>before</th><th>after</th></tr>
+<tr><td>fan-outs</td><td class="n">1</td><td class="n">2</td></tr>
+<tr><td>waits removed</td><td class="n"></td><td class="n">3</td></tr>
+<tr><td>readers at final review</td><td class="n">2, as two stages</td><td class="n">3 or more, together</td></tr>
+<tr><td>agents no stage calls</td><td class="n">2</td><td class="n">0</td></tr>
+<tr><td>loops the audit found, with a cap</td><td class="n">0 of 4</td><td class="n">3 of 4</td></tr>
+<tr><td>routers</td><td class="n">0</td><td class="n">4, none over 5 routes</td></tr>
+</table>
+</div>
+<p>These are counts, and <a href="RESULTS.md">RESULTS.md</a> says where to recount each one. Nothing was timed: the table says the graph changed shape, not that it got faster.</p>
+
+<h2>The records</h2>
+<p><a href="PROMPT.md">PROMPT.md</a> is what i asked, word for word. <a href="PLAN.md">PLAN.md</a> is the plan as approved. <a href="GRAPH_AUDIT.md">GRAPH_AUDIT.md</a> is the audit, edge by edge.</p>
+
+<footer>
+<p>The audit, the figures and this page were produced by a coding agent working from the prompt and plan linked above; i reviewed and approved them. 2026-11-14.</p>
+</footer>
+</main>
+</body>
+</html>
