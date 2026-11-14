@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" role="img" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<title>the pipeline before: one long chain with an uncapped fix loop</title>
+<defs><marker id="arrow" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0.5 L12 5 L0 9.5 Z" fill="currentColor" style="fill:context-stroke"/></marker></defs>
+<rect x="30" y="50" width="170" height="48" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="115" y="79.6" font-size="16" text-anchor="middle" fill="currentColor">researcher</text>
+<rect x="30" y="126" width="170" height="48" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="115" y="155.6" font-size="16" text-anchor="middle" fill="currentColor">domain scientist</text>
+<rect x="240" y="88" width="100" height="48" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="290" y="117.6" font-size="16" text-anchor="middle" fill="currentColor">planner</text>
+<rect x="385" y="88" width="130" height="48" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="450" y="117.6" font-size="16" text-anchor="middle" fill="currentColor">programmer</text>
+<rect x="560" y="88" width="100" height="48" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="610" y="117.6" font-size="16" text-anchor="middle" fill="currentColor">dry run</text>
+<rect x="705" y="88" width="120" height="48" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="765" y="117.6" font-size="16" text-anchor="middle" fill="currentColor">validator</text>
+<rect x="30" y="262" width="170" height="48" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="115" y="291.6" font-size="16" text-anchor="middle" fill="currentColor">science critic</text>
+<rect x="350" y="262" width="120" height="48" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="410" y="291.6" font-size="16" text-anchor="middle" fill="currentColor">red team</text>
+<rect x="630" y="262" width="120" height="48" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="690" y="291.6" font-size="16" text-anchor="middle" fill="currentColor">deliver</text>
+<path d="M200 74 L240 102" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M200 150 L240 122" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M340 112 L385 112" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M515 112 L560 112" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M660 112 L705 112" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M765 136 L765 216 L115 216 L115 262" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M200 286 L350 286" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M470 286 L630 286" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M765 88 L765 48 L450 48 L450 88" fill="none" stroke="#c9571a" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+<text x="607" y="36" font-size="14" text-anchor="middle" fill="#c9571a">fails: back to programmer, no cap</text>
+</svg>

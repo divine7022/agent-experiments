@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 690" role="img" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<title>the pipeline after: lead step, two fan-outs, two capped loops</title>
+<defs><marker id="arrow" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0.5 L12 5 L0 9.5 Z" fill="currentColor" style="fill:context-stroke"/></marker></defs>
+<rect x="50" y="100" width="130" height="64" rx="8" fill="none" stroke="#2a7ad1" stroke-width="2"/>
+<text x="115" y="127.6" font-size="16" text-anchor="middle" fill="currentColor">lead</text>
+<text x="115" y="146.9" font-size="14" text-anchor="middle" fill="currentColor" fill-opacity="0.8">work order</text>
+<rect x="260" y="20" width="200" height="64" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="360" y="47.6" font-size="16" text-anchor="middle" fill="currentColor">researcher</text>
+<text x="360" y="66.9" font-size="14" text-anchor="middle" fill="currentColor" fill-opacity="0.8">one per angle</text>
+<rect x="260" y="100" width="200" height="64" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="360" y="137.6" font-size="16" text-anchor="middle" fill="currentColor">domain scientist</text>
+<rect x="260" y="180" width="200" height="64" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="360" y="207.6" font-size="16" text-anchor="middle" fill="currentColor">planner</text>
+<text x="360" y="226.9" font-size="14" text-anchor="middle" fill="currentColor" fill-opacity="0.8">sweeps code and data</text>
+<rect x="540" y="100" width="180" height="64" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="630" y="127.6" font-size="16" text-anchor="middle" fill="currentColor">plan</text>
+<text x="630" y="146.9" font-size="14" text-anchor="middle" fill="currentColor" fill-opacity="0.8">merge into one spec</text>
+<rect x="770" y="100" width="160" height="64" rx="8" fill="none" stroke="#2a7ad1" stroke-width="2"/>
+<text x="850" y="127.6" font-size="16" text-anchor="middle" fill="currentColor">lead</text>
+<text x="850" y="146.9" font-size="14" text-anchor="middle" fill="currentColor" fill-opacity="0.8">checks the plan</text>
+<path d="M180 132 L260 52" fill="none" stroke="#2a7ad1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M460 52 L540 116" fill="none" stroke="#2a7ad1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M180 132 L260 132" fill="none" stroke="#2a7ad1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M460 132 L540 132" fill="none" stroke="#2a7ad1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M180 132 L260 212" fill="none" stroke="#2a7ad1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M460 212 L540 148" fill="none" stroke="#2a7ad1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M720 132 L770 132" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="70" y="360" width="160" height="48" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="150" y="389.6" font-size="16" text-anchor="middle" fill="currentColor">programmer</text>
+<rect x="400" y="360" width="160" height="48" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="480" y="389.6" font-size="16" text-anchor="middle" fill="currentColor">dry run</text>
+<rect x="730" y="360" width="160" height="48" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="810" y="389.6" font-size="16" text-anchor="middle" fill="currentColor">validator</text>
+<path d="M850 164 L850 290 L105 290 L105 360" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M230 384 L400 384" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M560 384 L730 384" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M810 360 L810 326 L195 326 L195 360" fill="none" stroke="#c9571a" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="502" y="316" font-size="14" text-anchor="middle" fill="#c9571a">fails: fix and rerun, max 3 passes</text>
+<rect x="70" y="470" width="160" height="64" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="150" y="507.6" font-size="16" text-anchor="middle" fill="currentColor">science critic</text>
+<rect x="245" y="470" width="160" height="64" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="325" y="497.6" font-size="16" text-anchor="middle" fill="currentColor">maintainer</text>
+<text x="325" y="517.6" font-size="16" text-anchor="middle" fill="currentColor">reviewer</text>
+<rect x="420" y="470" width="160" height="64" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="500" y="507.6" font-size="16" text-anchor="middle" fill="currentColor">red team</text>
+<rect x="595" y="470" width="160" height="64" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="675" y="497.6" font-size="16" text-anchor="middle" fill="currentColor">style reviewer</text>
+<text x="675" y="516.9" font-size="14" text-anchor="middle" fill="currentColor" fill-opacity="0.8">on an R diff</text>
+<rect x="770" y="470" width="160" height="64" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="850" y="497.6" font-size="16" text-anchor="middle" fill="currentColor">source checker</text>
+<text x="850" y="516.9" font-size="14" text-anchor="middle" fill="currentColor" fill-opacity="0.8">one per key claim</text>
+<rect x="390" y="600" width="220" height="64" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="500" y="627.6" font-size="16" text-anchor="middle" fill="currentColor">merge reviews</text>
+<text x="500" y="646.9" font-size="14" text-anchor="middle" fill="currentColor" fill-opacity="0.8">one list, who reported</text>
+<rect x="730" y="600" width="160" height="64" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="810" y="627.6" font-size="16" text-anchor="middle" fill="currentColor">deliver</text>
+<text x="810" y="646.9" font-size="14" text-anchor="middle" fill="currentColor" fill-opacity="0.8">one next step</text>
+<path d="M810 408 L810 440 L150 440 L150 470" fill="none" stroke="#2a7ad1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M150 534 L150 564 L500 564 L500 600" fill="none" stroke="#2a7ad1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M810 408 L810 440 L325 440 L325 470" fill="none" stroke="#2a7ad1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M325 534 L325 564 L500 564 L500 600" fill="none" stroke="#2a7ad1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M810 408 L810 440 L500 440 L500 470" fill="none" stroke="#2a7ad1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M500 534 L500 564 L500 564 L500 600" fill="none" stroke="#2a7ad1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M810 408 L810 440 L675 440 L675 470" fill="none" stroke="#2a7ad1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M675 534 L675 564 L500 564 L500 600" fill="none" stroke="#2a7ad1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M810 408 L810 440 L850 440 L850 470" fill="none" stroke="#2a7ad1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M850 534 L850 564 L500 564 L500 600" fill="none" stroke="#2a7ad1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M610 632 L730 632" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M390 632 L30 632 L30 384 L70 384" fill="none" stroke="#c9571a" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="210" y="622" font-size="14" text-anchor="middle" fill="#c9571a">still open: fix, max 2 rounds</text>
+</svg>
